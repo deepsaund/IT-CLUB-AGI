@@ -5,7 +5,8 @@
     box-sizing: border-box;
 }
 
-body,html {
+body,
+html {
     height: 100%;
     width: 100%;
     font-family: 'poppin', sans-serif;
@@ -25,9 +26,11 @@ h2 {
     margin-bottom: 20px;
 }
 
+/* ====================>>>>>>>>>>>>> Hero section <<<<<<< */
+
 /* Hero Section */
 #header {
-    background-image:linear-gradient(rgba(22, 22, 22, 0.905), rgba(22, 22, 22, 0.893)), url('header-bg.jpg');
+    background-image: linear-gradient(rgba(22, 22, 22, 0.905), rgba(22, 22, 22, 0.893)), url('header-bg.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -69,6 +72,8 @@ h2 {
     background-color: #ff531a;
 }
 
+/* ====================>>>>>>>>>>>>> Activities section <<<<<<< */
+
 /* Activities Section */
 .activities-grid {
     display: grid;
@@ -91,40 +96,57 @@ h2 {
 .activity-card img {
     max-width: 100%;
     width: 100%;
-    height : 36vh;
+    height: 36vh;
     object-fit: cover;
     border-radius: 10px;
 }
-#teaching{
-    width: 100vw;
+
+
+/* ====================>>>>>>>>>>>>>teaching section <<<<<<< */
+#teaching {
+    width: 100%;
     /* background: #8b5a5a; */
+    display: flex;align-items: center;
+    justify-content: center;
+}
+#teaching:nth-child(2n){
+    align-items: end;
 }
 
-#ms-word{
-    height: 100vh;
-    width: 100vw;
-background:linear-gradient(180deg, rgba(18,18,18,1) 10%, rgba(255, 255, 255, 0.03) 50%, #121212a7 100%);
-}
-.intro{
+.intro {
     position: relative;
 }
-.c-logo{
+
+.c-logo {
+    width: 30%;
     position: absolute;
     left: 0px;
     top: 25px;
     z-index: 1;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    /* background: #9f148a; */
 }
-.c-logo img{
-    width: 400px;
-    filter: drop-shadow(rgba(0, 0, 0, 0.404) 0px 0px 20px );
+
+.c-logo img {
+    width: 30%;
+    /* height: 150px; */
+    filter: drop-shadow(rgba(0, 0, 0, 0.404) 0px 0px 20px);
+    /* background: #871a1a; */
 
 }
-.c-logo h1{
-    font-size: 30PX;
-color: #ff531a;
-    margin-left: 50PX;
+
+.c-logo h1 {
+    width: 100%;
+    font-size: 25px;
+    color: #ff531a;
+
+    /* background: #2b40a9; */
 }
-.c-definition{
+
+.c-definition {
     background: #ffffff09;
     width: 90%;
     height: 200px;
@@ -135,32 +157,50 @@ color: #ff531a;
     color: #fff;
     padding: 40px;
 
-    
-    }
-.c-definition h3{
-     margin-left: 320px;
+
+}
+
+.c-definition h3 {
+    margin-left: 320px;
     /* background: #ff2d2d; */
     z-index: 99;
 }
 
 
-.c-content{
+.c-content {
     height: 100%;
     width: 100%;
     display: flex;
     align-items: center;
     justify-items: center;
 }
-#ms-excel{
+
+#ms-word {
     height: 100vh;
-    width: 100vw;
-    background: #311616;
+    width: 100%;
+    /* background: linear-gradient(180deg, rgba(18, 18, 18, 1) 10%, rgba(255, 255, 255, 0.03) 50%, #121212a7 100%); */
+    background: #253d7cdf;
 }
-#ms-powerpoint{
+
+#ms-excel {
     height: 100vh;
-    width: 100vw;
-    background: #0b441b;
+    width: 100%;
+    background: #386c46;
 }
+
+#ms-powerpoint {
+    height: 100vh;
+    width: 100%;
+    background: #80542e;
+}
+#web-d {
+    height: 100vh;
+    width: 100%;
+    background: #0f1f3f;
+}
+
+/* ====================>>>>>>>>>>>>> Contact section <<<<<<< */
+
 /* Contact Form */
 form {
     max-width: 600px;
@@ -169,7 +209,8 @@ form {
     flex-direction: column;
 }
 
-form input, form textarea {
+form input,
+form textarea {
     padding: 15px;
     margin: 10px 0;
     border: 1px solid #ccc;
@@ -196,6 +237,7 @@ form button:hover {
         opacity: 0;
         transform: translateY(100px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);

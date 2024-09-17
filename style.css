@@ -5,7 +5,9 @@
     box-sizing: border-box;
 }
 
-body {
+body,html {
+    height: 100%;
+    width: 100%;
     font-family: 'poppin', sans-serif;
     background-color: #121212;
     color: #ffffff;
@@ -93,14 +95,72 @@ h2 {
     object-fit: cover;
     border-radius: 10px;
 }
-
-.teaching-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
-    margin-top: 50px;
+#teaching{
+    width: 100vw;
+    /* background: #8b5a5a; */
 }
 
+#ms-word{
+    height: 100vh;
+    width: 100vw;
+background:linear-gradient(180deg, rgba(18,18,18,1) 10%, rgba(255, 255, 255, 0.03) 50%, #121212a7 100%);
+}
+.intro{
+    position: relative;
+}
+.c-logo{
+    position: absolute;
+    left: 0px;
+    top: 25px;
+    z-index: 1;
+}
+.c-logo img{
+    width: 400px;
+    filter: drop-shadow(rgba(0, 0, 0, 0.404) 0px 0px 20px );
+
+}
+.c-logo h1{
+    font-size: 30PX;
+color: #ff531a;
+    margin-left: 50PX;
+}
+.c-definition{
+    background: #ffffff09;
+    width: 90%;
+    height: 200px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    padding: 40px;
+
+    
+    }
+.c-definition h3{
+     margin-left: 320px;
+    /* background: #ff2d2d; */
+    z-index: 99;
+}
+
+
+.c-content{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+#ms-excel{
+    height: 100vh;
+    width: 100vw;
+    background: #311616;
+}
+#ms-powerpoint{
+    height: 100vh;
+    width: 100vw;
+    background: #0b441b;
+}
 /* Contact Form */
 form {
     max-width: 600px;
